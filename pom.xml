@@ -33,7 +33,7 @@
 						<!-- control plane location -->
 						<uri>https://anypoint.mulesoft.com</uri>
 						<businessGroupId>${businessGroupId}</businessGroupId>
-						<muleVersion>4.6.2</muleVersion>
+						<muleVersion>4.6.0</muleVersion>
 						<username>${username}</username>
 						<password>${password}</password>
 						<applicationName>${app-name}</applicationName>

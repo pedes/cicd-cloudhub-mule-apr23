@@ -60,8 +60,8 @@ jobs:
         
     - name: Deploy to CloudHub
       run: |
-        mvn package deploy -DmuleDeploy -Denvironment=dev -Dapp-name="cicd-app-andres-23apr" \
+        mvn clean deploy -DmuleDeploy -Denvironment=dev -Dapp-name="cicd-app-andres-23apr" \
         -DbusinessGroupId="48ef632f-a26c-4a48-8ad8-adec48be0087" \
         -Dusername=${{ secrets.ANYPOINT_USERNAME }} -Dpassword=${{ secrets.ANYPOINT_PASSWORD }} \
-        -Dcicd.welcome.message="This app is so cool that was deployed through Github" -Duser="Mr Robot"
+        -Dcicd.welcome.message="This app is so cool that was deployed through Github" -Duser="Mr Robot" --file pom.xml
   
